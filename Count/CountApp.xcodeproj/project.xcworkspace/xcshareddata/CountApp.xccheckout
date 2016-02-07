@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A086795D-BFEC-4F66-B7B7-BD63CECA1CD1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CountApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4C5E62F8C525DB5767824014A7A1C22340BB99CB</key>
+		<string>https://github.com/caprice-j/iPhoneApps.git</string>
+		<key>E7E44A5118A57E0FC89826CD0B2A08C759C487FE</key>
+		<string>https://github.com/caprice-j/CountApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CountApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4C5E62F8C525DB5767824014A7A1C22340BB99CB</key>
+		<string>../../..</string>
+		<key>E7E44A5118A57E0FC89826CD0B2A08C759C487FE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/caprice-j/CountApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E7E44A5118A57E0FC89826CD0B2A08C759C487FE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4C5E62F8C525DB5767824014A7A1C22340BB99CB</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7E44A5118A57E0FC89826CD0B2A08C759C487FE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Count</string>
+		</dict>
+	</array>
+</dict>
+</plist>
