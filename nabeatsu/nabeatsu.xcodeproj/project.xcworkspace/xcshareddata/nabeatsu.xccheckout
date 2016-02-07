@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FF638BA7-27C6-44CE-BA97-E90052E4745A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>nabeatsu</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4C5E62F8C525DB5767824014A7A1C22340BB99CB</key>
+		<string>https://github.com/caprice-j/iPhoneApps.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>nabeatsu/nabeatsu.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4C5E62F8C525DB5767824014A7A1C22340BB99CB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/caprice-j/iPhoneApps.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4C5E62F8C525DB5767824014A7A1C22340BB99CB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4C5E62F8C525DB5767824014A7A1C22340BB99CB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iPhoneApps</string>
+		</dict>
+	</array>
+</dict>
+</plist>
