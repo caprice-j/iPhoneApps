@@ -25,6 +25,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" red="1" green="0.9827819834" blue="0.99128368929999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWp-6m-PyK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GZ3-65-hD6">
                                 <rect key="frame" x="90" y="444" width="138" height="44"/>
@@ -40,6 +43,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.3131395971" green="0.53294748039999995" blue="0.2141291786" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lsW-h6-Naf"/>
                     <connections>
                         <segue destination="mkg-2e-7uo" kind="modal" identifier="toQuestionView" id="et0-uZ-2Tg"/>
                     </connections>
@@ -48,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="152" y="518"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="5Oe-wz-opR">
             <objects>
-                <viewController id="mkg-2e-7uo" sceneMemberID="viewController">
+                <viewController id="mkg-2e-7uo" customClass="QuestionViewController" customModule="WordList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pbg-RT-MHC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,11 +96,17 @@
                                 <state key="normal" title="答えを表示">
                                     <color key="titleColor" red="1" green="0.9827819834" blue="0.99128368929999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonPushed" destination="mkg-2e-7uo" eventType="touchUpInside" id="MSU-hC-y6B"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3131395971" green="0.53294748039999995" blue="0.2141291786" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="answerLabel" destination="Jps-xE-4Lk" id="gg2-4J-1EN"/>
+                        <outlet property="nextButton" destination="05v-eX-L1m" id="3hz-91-kiO"/>
+                        <outlet property="questionLabel" destination="N26-Yg-UNF" id="9Sc-3C-rp1"/>
                         <segue destination="wW1-Ho-ANf" kind="modal" identifier="toFinishView" id="A60-f4-wrY"/>
                     </connections>
                 </viewController>
@@ -104,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="528" y="518"/>
         </scene>
-        <!--View Controller-->
+        <!--Finish View Controller-->
         <scene sceneID="qSa-2y-PKB">
             <objects>
-                <viewController id="wW1-Ho-ANf" sceneMemberID="viewController">
+                <viewController id="wW1-Ho-ANf" customClass="FinishViewController" customModule="WordList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k9F-YA-pIG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,9 +126,12 @@
                                 <rect key="frame" x="89" y="453" width="143" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85980448298429324" green="0.61865593279221753" blue="0.21783489744498472" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="戻る">
                                     <color key="titleColor" red="1" green="0.9827819834" blue="0.99128368929999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="DJL-nj-Yjj"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fin.png" id="Crb-ZF-uwO">
                                 <rect key="frame" x="89" y="112" width="143" height="144"/>
@@ -135,7 +148,7 @@
         <!--一覧-->
         <scene sceneID="Edr-JE-Dcr">
             <objects>
-                <tableViewController id="Qm3-TA-BG4" sceneMemberID="viewController">
+                <tableViewController id="Qm3-TA-BG4" customClass="ListTableViewController" customModule="WordList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7op-R2-seH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,7 +169,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="一覧" id="wnP-gA-Udv">
-                        <barButtonItem key="leftBarButtonItem" title="もどる" id="cUq-AK-d9W"/>
+                        <barButtonItem key="leftBarButtonItem" title="もどる" id="cUq-AK-d9W">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="push" id="F0e-7l-Zp3"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="C16-Ip-WVy">
                             <connections>
                                 <segue destination="s3j-Mk-hZZ" kind="push" id="XFI-nT-djI"/>
@@ -171,7 +188,7 @@
         <!--新規追加-->
         <scene sceneID="E3z-zn-Adf">
             <objects>
-                <viewController id="s3j-Mk-hZZ" sceneMemberID="viewController">
+                <viewController id="s3j-Mk-hZZ" customClass="AddViewController" customModule="WordList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4g8-nc-RDy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,8 +223,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="新規追加" id="Jy7-HY-LtV">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="rsb-XG-VbA"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="rsb-XG-VbA">
+                            <connections>
+                                <action selector="saveWord" destination="s3j-Mk-hZZ" id="9Q6-mX-6Sc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="englishTextField" destination="afM-4m-uWw" id="M5H-nQ-nmz"/>
+                        <outlet property="japaneseTextField" destination="kbE-tC-PUk" id="Axj-8X-X2u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rc2-Pm-dZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,4 +262,7 @@
         <image name="title_logo.png" width="373" height="179"/>
         <image name="word_blank.png" width="336" height="128"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DJL-nj-Yjj"/>
+    </inferredMetricsTieBreakers>
 </document>

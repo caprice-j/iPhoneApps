@@ -28,7 +28,7 @@ class ListTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         if saveData.arrayForKey("WORD") != nil {
-            wordArray = saveData.arrayForKey("word")!
+            wordArray = saveData.arrayForKey("WORD")!
         }
         tableView.reloadData()
     }

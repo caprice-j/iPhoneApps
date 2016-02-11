@@ -26,8 +26,8 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func saveWord() {
-        let wordDictionary = ["english":  englishTextField.text,
-                              "japanese": japaneseTextField.text ]
+        let wordDictionary = ["english":  String( englishTextField.text ),
+                              "japanese": String( japaneseTextField.text ) ]
         
         wordArray.append(wordDictionary)
         saveData.setObject(wordArray, forKey: "WORD")
