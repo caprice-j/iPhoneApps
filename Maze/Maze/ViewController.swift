@@ -39,6 +39,8 @@ class ViewController: UIViewController {
     var goalView: UIView!
     var startView: UIView!
     
+    var wallRectArray = [CGRect]()
+    
     func createView(x x: Int, y: Int, width: CGFloat, height: CGFloat, offsetX: CGFloat = 0, offsetY: CGFloat = 0) -> UIView {
         let rect = CGRect(x: 0, y: 0, width: width, height: height)
         let view = UIView( frame: rect )
@@ -80,10 +82,51 @@ class ViewController: UIViewController {
                 posY = self.screenSize.height - (self.playerView.frame.height / 2)
             }
             
+            // 当たり判定： 壁とプレイヤ
+            for wallRect in self.wallRectArray {
+                if ( CGRectIntersectsRect(wallRect, self.playerView.frame)){
+                    self.gameCheck("Game Over", message:"壁に当たりました")
+                    return
+                }
+            }
+            
+            // 当たり判定：　ゴールとプレイヤ
+            if( CGRectIntersectsRect(self.goalView.frame, self.playerView.frame )){
+                self.gameCheck("Clear", message:"クリアしました")
+                return
+            }
+            
             self.playerView.center = CGPointMake(posX, posY)
         }
         
         playerMotionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: handler)
+    }
+    
+    func gameCheck(result:String, message:String){
+        if playerMotionManager.accelerometerActive {
+            playerMotionManager.stopAccelerometerUpdates()
+        }
+        
+        let gameCheckAlert: UIAlertController = UIAlertController( title:result, message:message, preferredStyle:  .Alert)
+        
+        let retryAction = UIAlertAction(title: "もう一度", style: .Default) {
+            action in self.retry()
+        }
+        
+        gameCheckAlert.addAction(retryAction)
+        
+        self.presentViewController(gameCheckAlert, animated: true, completion: nil)
+    }
+    
+    func retry(){
+        // プレイヤーを開始位置に戻す
+        playerView.center = startView.center
+        
+        if !playerMotionManager.accelerometerActive {
+            self.startAccelerometer()
+        }
+        speedX = 0.0
+        speedY = 0.0
     }
 
     override func viewDidLoad() {
@@ -104,7 +147,7 @@ class ViewController: UIViewController {
                     let wallView = createView(x: x, y: y, width: cellWidth, height: cellHeight, offsetX: cellOffsetX, offsetY: cellOffsetY)
                     wallView.backgroundColor = UIColor.blackColor()
                     view.addSubview(wallView)
-                    // wallRectArray.append(wallView.frame)
+                    wallRectArray.append(wallView.frame)
                 case 2:
                     startView = createView(x: x, y: y, width: cellWidth, height: cellHeight, offsetX: cellOffsetX, offsetY: cellOffsetY)
                     startView.backgroundColor = UIColor.greenColor()
