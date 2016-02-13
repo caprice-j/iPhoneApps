@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var numberLabel: UILabel!
+    
+    var n: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +22,21 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func p(){
+        n = n + 1
+        numberLabel.text = String(n)
+    }
+
+    @IBAction func m(){
+        n = n - 1
+        numberLabel.text = String(n)
+    }
+
+    @IBAction func c(){
+        n = 0
+        numberLabel.text = String(n)
     }
 
 
