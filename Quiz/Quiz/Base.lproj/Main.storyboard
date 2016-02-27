@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,29 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="texture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9yG-wf-yqp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJq-Az-agM">
-                                <rect key="frame" x="36" y="435" width="248" height="85"/>
-                                <state key="normal" title="Button" image="start.png">
+                                <rect key="frame" x="36" y="346" width="248" height="54"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="始める">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="BUj-kM-nEE" kind="show" id="3CO-q4-L7P"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="与えられた問題が「○」か「☓」かを選んで下さい。すべての問題に答え終わると、あなたの「一般常識レベル」が表示されます。" translatesAutoresizingMaskIntoConstraints="NO" id="0UR-GE-O8M">
-                                <rect key="frame" x="40" y="108" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0UR-GE-O8M">
+                                <rect key="frame" x="45" y="246" width="231" height="64"/>
+                                <string key="text">冒頭さえ知ってれば
+読んだも同然　　＞　(｀・ω・´)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="一般常識度クイズ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sL8-ZN-vPH">
-                                <rect key="frame" x="33" y="48" width="255" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="文豪" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sL8-ZN-vPH">
+                                <rect key="frame" x="20" y="100" width="185" height="111"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="74"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chs-7E-PvI">
+                                <rect key="frame" x="173" y="86" width="127" height="140"/>
+                                <string key="text">知ったか
+クイズ</string>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -59,17 +73,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kki-U3-jv0">
-                                <rect key="frame" x="122" y="355" width="70" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="choiceAnswer:" destination="BUj-kM-nEE" eventType="touchUpInside" id="Eho-NC-eGF"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="texture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="keU-0X-cIT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRD-48-CKy">
-                                <rect key="frame" x="122" y="483" width="70" height="30"/>
+                                <rect key="frame" x="40" y="483" width="240" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -78,7 +86,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7F-Li-K3q">
-                                <rect key="frame" x="119" y="421" width="77" height="30"/>
+                                <rect key="frame" x="40" y="421" width="240" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -87,11 +95,20 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="問題文" translatesAutoresizingMaskIntoConstraints="NO" id="LtN-I0-zAN">
-                                <rect key="frame" x="40" y="42" width="240" height="128"/>
+                                <rect key="frame" x="40" y="42" width="240" height="294"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kki-U3-jv0">
+                                <rect key="frame" x="68" y="355" width="185" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="BUj-kM-nEE" eventType="touchUpInside" id="Eho-NC-eGF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -120,14 +137,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rT1-oF-jss">
-                                <rect key="frame" x="139" y="226" width="34" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="texture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gbB-cl-k4R">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rT1-oF-jss">
+                                <rect key="frame" x="43" y="99" width="245" height="148"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97b-UG-l5g">
-                                <rect key="frame" x="108" y="450" width="105" height="30"/>
+                                <rect key="frame" x="104" y="457" width="105" height="30"/>
                                 <state key="normal" title="タイトルへ戻る">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -149,6 +169,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="start.png" width="309" height="126"/>
+        <image name="texture.jpg" width="1200" height="1200"/>
     </resources>
 </document>
