@@ -10,6 +10,8 @@
 		74661F571C8709D800F8FDE8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74661F541C8709D800F8FDE8 /* Default-568h@2x.png */; };
 		74661F581C8709D800F8FDE8 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74661F551C8709D800F8FDE8 /* Default-667h@2x.png */; };
 		74661F591C8709D800F8FDE8 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74661F561C8709D800F8FDE8 /* Default-736h@3x.png */; };
+		74661F671C870E7400F8FDE8 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74661F611C870E7400F8FDE8 /* StoryboardHelper.swift */; };
+		74661F691C870EC100F8FDE8 /*  3.5inch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74661F681C870EC100F8FDE8 /*  3.5inch.storyboard */; };
 		747F098A1C811687002043B8 /* paper_royaltyfree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 747F09891C811687002043B8 /* paper_royaltyfree.jpg */; };
 		747F098C1C811820002043B8 /* texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 747F098B1C811820002043B8 /* texture.jpg */; };
 		747F09AC1C816A08002043B8 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 747F09961C816A08002043B8 /* Contents.json */; };
@@ -42,7 +44,6 @@
 		C7343EA11A89986900D857EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7343EA01A89986900D857EA /* AppDelegate.swift */; };
 		C7343EA61A89986900D857EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7343EA41A89986900D857EA /* Main.storyboard */; };
 		C7343EA81A89986900D857EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7343EA71A89986900D857EA /* Images.xcassets */; };
-		C7343EAB1A89986900D857EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7343EA91A89986900D857EA /* LaunchScreen.xib */; };
 		C7343EB71A89986900D857EA /* QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7343EB61A89986900D857EA /* QuizTests.swift */; };
 		C7343EC11A89997C00D857EA /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7343EC01A89997C00D857EA /* QuizViewController.swift */; };
 		C7FE4DE01A8A17B9004C530A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FE4DDF1A8A17B9004C530A /* ResultViewController.swift */; };
@@ -62,6 +63,8 @@
 		74661F541C8709D800F8FDE8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		74661F551C8709D800F8FDE8 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		74661F561C8709D800F8FDE8 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		74661F611C870E7400F8FDE8 /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		74661F681C870EC100F8FDE8 /*  3.5inch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = " 3.5inch.storyboard"; sourceTree = "<group>"; };
 		747F09891C811687002043B8 /* paper_royaltyfree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paper_royaltyfree.jpg; sourceTree = "<group>"; };
 		747F098B1C811820002043B8 /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture.jpg; sourceTree = "<group>"; };
 		747F09961C816A08002043B8 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
@@ -96,7 +99,6 @@
 		C7343EA01A89986900D857EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7343EA51A89986900D857EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7343EA71A89986900D857EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C7343EAA1A89986900D857EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C7343EB01A89986900D857EA /* QuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7343EB51A89986900D857EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7343EB61A89986900D857EA /* QuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTests.swift; sourceTree = "<group>"; };
@@ -130,6 +132,14 @@
 				74661F561C8709D800F8FDE8 /* Default-736h@3x.png */,
 			);
 			path = "Defaults-master";
+			sourceTree = "<group>";
+		};
+		74661F5A1C870E7400F8FDE8 /* StoryboardHelper-master */ = {
+			isa = PBXGroup;
+			children = (
+				74661F611C870E7400F8FDE8 /* StoryboardHelper.swift */,
+			);
+			path = "StoryboardHelper-master";
 			sourceTree = "<group>";
 		};
 		747F09941C816A08002043B8 /* ios */ = {
@@ -211,6 +221,7 @@
 			children = (
 				747F09941C816A08002043B8 /* ios */,
 				C7343EA01A89986900D857EA /* AppDelegate.swift */,
+				74661F5A1C870E7400F8FDE8 /* StoryboardHelper-master */,
 				C7343EC01A89997C00D857EA /* QuizViewController.swift */,
 				C7FE4DDF1A8A17B9004C530A /* ResultViewController.swift */,
 				747F09891C811687002043B8 /* paper_royaltyfree.jpg */,
@@ -218,9 +229,9 @@
 				74661F531C8709D800F8FDE8 /* Defaults-master */,
 				C7343EA41A89986900D857EA /* Main.storyboard */,
 				C7343EA71A89986900D857EA /* Images.xcassets */,
-				C7343EA91A89986900D857EA /* LaunchScreen.xib */,
 				B101ABF51B53796200919FB9 /* images */,
 				C7343E9E1A89986900D857EA /* Supporting Files */,
+				74661F681C870EC100F8FDE8 /*  3.5inch.storyboard */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -349,7 +360,6 @@
 				747F09BB1C816A08002043B8 /* Icon-Small-50.png in Resources */,
 				747F09BA1C816A08002043B8 /* Icon-72@2x.png in Resources */,
 				747F09B01C816A08002043B8 /* Icon-60@2x.png in Resources */,
-				C7343EAB1A89986900D857EA /* LaunchScreen.xib in Resources */,
 				C7343EA81A89986900D857EA /* Images.xcassets in Resources */,
 				747F09C01C816A08002043B8 /* iTunesArtwork@2x.png in Resources */,
 				747F09AD1C816A08002043B8 /* Icon-40.png in Resources */,
@@ -362,6 +372,7 @@
 				74661F591C8709D800F8FDE8 /* Default-736h@3x.png in Resources */,
 				747F09B11C816A08002043B8 /* Icon-60@3x.png in Resources */,
 				747F09B71C816A08002043B8 /* Icon-Small@3x.png in Resources */,
+				74661F691C870EC100F8FDE8 /*  3.5inch.storyboard in Resources */,
 				74661F581C8709D800F8FDE8 /* Default-667h@2x.png in Resources */,
 				747F09AC1C816A08002043B8 /* Contents.json in Resources */,
 				747F09B21C816A08002043B8 /* Icon-76.png in Resources */,
@@ -386,6 +397,7 @@
 			files = (
 				C7343EA11A89986900D857EA /* AppDelegate.swift in Sources */,
 				C7343EC11A89997C00D857EA /* QuizViewController.swift in Sources */,
+				74661F671C870E7400F8FDE8 /* StoryboardHelper.swift in Sources */,
 				C7FE4DE01A8A17B9004C530A /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,14 +427,6 @@
 				C7343EA51A89986900D857EA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C7343EA91A89986900D857EA /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7343EAA1A89986900D857EA /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
