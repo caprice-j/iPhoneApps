@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="iQs-gr-Wpq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="i2U-DM-4X2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="texture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uoc-k8-0Z6">
@@ -55,6 +55,7 @@
                             </label>
                         </subviews>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVv-8C-Gj9" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,23 +70,14 @@
                         <viewControllerLayoutGuide type="bottom" id="IZU-rl-HwH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bsv-za-V17">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="texture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="c9u-gN-sLS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKc-7r-F20">
-                                <rect key="frame" x="40" y="483" width="240" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="choiceAnswer:" destination="05y-7x-M6F" eventType="touchUpInside" id="Igb-Vv-sNx"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2z-EO-Lpu">
-                                <rect key="frame" x="40" y="421" width="240" height="30"/>
+                                <rect key="frame" x="40" y="398" width="240" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -106,6 +98,15 @@
                                 </state>
                                 <connections>
                                     <action selector="choiceAnswer:" destination="05y-7x-M6F" eventType="touchUpInside" id="OOd-JH-5st"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKc-7r-F20">
+                                <rect key="frame" x="40" y="442" width="240" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="05y-7x-M6F" eventType="touchUpInside" id="Igb-Vv-sNx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -132,7 +133,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8SO-6b-Awm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kMY-DF-gXd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="texture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TAh-5H-nYE">
@@ -145,7 +146,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZN-Ik-27U">
-                                <rect key="frame" x="104" y="457" width="105" height="30"/>
+                                <rect key="frame" x="99" y="341" width="105" height="30"/>
                                 <state key="normal" title="タイトルへ戻る">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>

@@ -20,10 +20,10 @@ class StoryboardHelper: NSObject {
             storyboard = UIStoryboard(name: "Main", bundle: nil)
         }else if height == 480 {
             // iPhone4s
-            storyboard = UIStoryboard(name: "3.5inch", bundle: nil)
+            storyboard = UIStoryboard(name: " 3.5inch", bundle: nil)
         }else if height == 1024 {
             // iPad
-            storyboard = UIStoryboard(name: "3.5inch", bundle: nil)
+            storyboard = UIStoryboard(name: " 3.5inch", bundle: nil)
         }else {
             // iPhone5・5s・5c + 何も読み込めなかった場合
             storyboard = UIStoryboard(name: "Main", bundle: nil)
