@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4C5E62F8C525DB5767824014A7A1C22340BB99CB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4C5E62F8C525DB5767824014A7A1C22340BB99CB" : 0,
+    "DFC3121E49D2A0324988313A41D3390D3D8DD410" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3645C674-5407-4B84-9C7B-0D34AAE6F87D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4C5E62F8C525DB5767824014A7A1C22340BB99CB" : "iPhoneApps",
+    "DFC3121E49D2A0324988313A41D3390D3D8DD410" : "Camp"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Quiz",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Quiz\/Quiz.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/caprice-j\/iPhoneApps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4C5E62F8C525DB5767824014A7A1C22340BB99CB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Life-is-Tech-iOS-Team\/Camp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DFC3121E49D2A0324988313A41D3390D3D8DD410"
+    }
+  ]
+}
